@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspire2", "aspire2\aspire2.csproj", "{59F39EFA-D8B9-4F94-AFF4-00652D3664AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{9B2B13B4-DCB7-4712-AF63-62C9AA09DEDD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59F39EFA-D8B9-4F94-AFF4-00652D3664AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59F39EFA-D8B9-4F94-AFF4-00652D3664AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59F39EFA-D8B9-4F94-AFF4-00652D3664AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59F39EFA-D8B9-4F94-AFF4-00652D3664AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2B13B4-DCB7-4712-AF63-62C9AA09DEDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2B13B4-DCB7-4712-AF63-62C9AA09DEDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2B13B4-DCB7-4712-AF63-62C9AA09DEDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2B13B4-DCB7-4712-AF63-62C9AA09DEDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

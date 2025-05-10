@@ -1,0 +1,12 @@
+version: '3.8' # Specifies the Docker Compose file format version
+
+services:
+  sql-server:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: aspire-sql-server
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=P@ssw0rd # For production, consider using secrets or .env files
+    ports:
+      - "1433:1433"
+    # restart: unless-stopped # Optional: to automatically restart the container

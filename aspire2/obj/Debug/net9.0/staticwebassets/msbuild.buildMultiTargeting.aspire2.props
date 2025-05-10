@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\aspire2.props" />
+</Project>
