@@ -1,20 +1,17 @@
-using Microsoft.EntityFrameworkCore;
-using Persistence;
+using OpenTelemetry.Trace;
+using WarehouseApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.AddServiceDefaults();
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-
-var connectionString =
-    builder.Configuration.GetConnectionString("DefaultConnection")
-    ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-
-builder.Services.AddDbContext<ProductDbContext>(options =>
-    options.UseSqlServer(connectionString));
+builder.AddRedisClient(connectionName: "cache");
+// builder.Services.AddSingleton(TracerProvider.Default.GetTracer(builder.Environment.ApplicationName));
+builder.Services.AddSingleton<WarehouseStore>();
 
 var app = builder.Build();
 

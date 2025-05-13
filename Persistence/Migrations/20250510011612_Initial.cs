@@ -22,18 +22,6 @@ namespace Persistence.Migrations
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
                 });
-            
-            migrationBuilder.InsertData(
-                table: "Products",
-                columns: new[] { "Id", "Name" }, // Specify columns, including the Id for seed data
-                values: new object[,]
-                {
-                    { 1, "Laptop Pro 15 inch" },
-                    { 2, "Wireless Mouse ergonomic" },
-                    { 3, "Mechanical Keyboard RGB" },
-                    { 4, "4K Monitor 27 inch" },
-                    { 5, "USB-C Hub 7-in-1" }
-                });
         }
 
         /// <inheritdoc />
